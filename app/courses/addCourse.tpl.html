@@ -1,0 +1,20 @@
+<div class="row" >
+    <div class="col-md-5">
+        <div class="row">
+            <h1>Add Course</h1> Degree Name:
+            <input type="text" class="form-control" ng-model="degName">
+            <br> Branch:
+            <select class="form-control" ng-model="degCourse" ng-options="l as l for l in vm.list" multiple></select>
+            <br>
+            <button class="btn btn-success" ng-click="vm.AddCourse(degName,degCourse)">Save</button>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-4">
+        <div class="row">
+            <a ui-sref="UNI.course.viewCourse">All Courses</a>
+        </div>
+    </div>
+    <!-- <div class="col-sm-7" ui-view>
+    </div> -->
+</div>

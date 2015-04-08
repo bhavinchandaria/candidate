@@ -1,0 +1,9 @@
+<div class="row" >
+    <div class="col-sm-6">
+    <h2> All Courses </h2>
+        <ul ng-repeat="course in vm.course">
+            <h4>Degree:{{course.Degree}}</h4>
+            <h5 ng-repeat="course1 in course.Course">has {{course1}} Course.</h5>
+           <hr/>
+        </ul>
+    </div>

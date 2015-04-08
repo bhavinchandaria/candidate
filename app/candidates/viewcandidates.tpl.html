@@ -1,0 +1,36 @@
+<div class="row">
+    <table class="table table-condensed table-striped">
+        <thead>
+            <tr>
+                <th>
+                    <input type="checkbox">
+                </th>
+                <th >Name<i class="pull-right fa fa-sort"></i>
+                </th>
+                <th >Address<i class="pull-right fa fa-sort"></i>
+                </th>
+                <th >Date of Birth<i class="pull-right fa fa-sort"></i>
+                </th>
+                <th >Degree<i class="pull-right fa fa-sort"></i>
+                </th>
+                <th >Branch<i class="pull-right fa fa-sort"></i>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="vm in vm.candidate">
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>{{vm.Name}}</td>
+                <td>{{vm.Address}}</td>
+                <td>{{vm.DOB}}</td>
+                <td>{{vm.Degree}}</td>
+                <td>{{vm.Course}}</td>
+                <td>
+                    <button class="btn btn-sm btn-danger"><i class="icon-remove-sign"> Delete</i></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
